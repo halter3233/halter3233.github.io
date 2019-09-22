@@ -1,0 +1,466 @@
+BODY {
+	font-family: arial, helvetica;
+}
+
+
+.naglowek {
+	font-family: inherit;
+/*	padding: 4px;*/
+	background-color: silver;
+}
+.naglowek H2 {
+	font-weight: bold
+}
+
+.zawartosc {
+	font-family: inherit;
+}
+
+.menu {
+	font-family: inherit;
+	border-width: 1px;
+	border-color: silver;
+	border-style: solid;
+}
+
+.menuNaglowek {
+	font-family: inherit;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: blue;
+	color: white;
+}
+
+.menuZawartosc {
+	font-family: inherit;
+	font-size: 9pt;
+}
+
+/* Gďż˝rne menu */
+
+.menuTopItem {
+	font-family: inherit;
+	font-size: 12px;
+	border-left: 1px dashed white;
+	text-align: center;
+}
+.menuTopItem A {
+	color: white;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.komBledyUzytkownika {
+	font-family: inherit;
+	font-size:9pt;
+	font-weight: bold;
+	color: red;
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: red;
+}
+
+/* Submenu z przyciskami*/
+/*
+.submenu A {
+	padding: 2px 4px 2px 4px; 
+	background-color: #ffbea4; 
+	color: #87462f; 
+	border-color: #ff855a;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	margin-right: 4px;
+	font-family: arial;
+
+}
+*/
+.submenu A {
+	color: blue
+}
+
+.tab {
+	font-family: inherit;
+}
+
+.tabWartosc1 {
+	font-family: arial, helvetica;
+	font-size: 9pt;
+	background-color: #faffed;
+	padding: 4px;
+	
+}
+
+.tabWartosc2 {
+	font-family: arial, helvetica;
+	font-size: 9pt;
+	background-color: white;
+	padding: 4px;
+}
+.tabWartoscPusto {
+	font-size: 9pt;
+	padding: 4px;
+}
+
+.tabWartosc3 {
+	font-family: arial, helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	background-color: #faffed;
+	padding: 4px;
+}
+
+.tabNaglowek {
+	font-family: arial, helvetica;
+	font-weight: bold;
+}
+
+.tabNaglowek2 {
+	font-family: arial, helvetica;
+	font-weight: bold;
+	font-size: 9pt;
+	background-color: #9ed774;
+	padding: 4px;
+}
+
+.tabSubWartoscStart {
+	display: run-in;
+}
+
+.tabSubWartosc {
+	display: run-in;
+	border-top:1px solid #6fb13f;
+}
+
+/* Przyciski rozklad zajec*/
+
+.bDodaj {
+	color:white;
+	background-color:#6dad6e;
+	width:10px; height:10px;
+	vertical-align:middle;
+	text-align:center;
+	text-decoration: none;
+}
+
+.bUsun {
+	color:white; 
+	background-color:#d98f86;
+	text-decoration: none;
+}
+
+.bPrzesun {
+	color: white; 
+	background-color: #dc9e5b;
+	text-decoration: none;
+}
+.bTutaj {
+	color: white;
+	background-color: #83bde2; 
+	text-decoration: none;
+}
+
+/* Style do dynamicznego generowania strony w wychowawcy */
+
+.popup1 {
+	border: 1px;
+	border-style: solid;
+	border-color: silver;
+	position: absolute;
+	background-color: #eeeeee;
+	visibility: hidden;
+	z-index:10;
+}
+
+.popup1 .nagl {
+	width: 100%;
+	height: 2ex;
+	background-color: red;
+	color: black;
+}
+
+.popup1 .nagl .Butt {
+	width: 1ex;
+	font-family: arial, helvetica;
+	height: 1ex;
+	color: red;
+	background-color: white;
+}
+
+.popButt {
+	font-family: arial;
+	font-size: 11px;
+	font-color: black;
+	
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.wychTab {
+        border: 2px solid #7c7c7c;
+        border-collapse: collapse;
+        background-color: white;
+}
+
+.wychTabWartosc1 {
+        font-family: arial, helvetica;
+        font-size: 13px;
+        color: 'transparent';
+        padding: 2px;
+        border: 1px solid #7c7c7c
+}
+
+.wychTabWartosc2 {
+
+}
+
+.wychTabNaglowek1 {
+        font-family: arial, helvetica;
+        font-size: 13px;
+        padding: 2px;
+        border: 1px solid #7c7c7c
+}
+
+.wychFormWartosc1 {
+
+}
+
+.wychFormWartosc2 {
+
+}
+
+
+FORM {
+	margin: 2px;
+	padding: 0px;
+}
+
+H3.dzial {
+	top-margin: 2px;
+	bottom-margin: 5px;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	color: #6a6a6a;
+
+}
+
+/* Panel rodzica */
+
+.obowiazkowe, .nieobowiazkowe, .nieob_w_dziennik {
+		font-family:arial, helvetica;
+
+}
+.obowiazkowe {
+		color: black;
+}
+.nieobowiazkowe {
+		font-style: italic !important;
+		color: gray !important;
+	
+}
+.nieob_w_dziennik {
+		color:black !important;
+		font-style:italic !important;
+}
+
+A.mnu {
+	 color: white; 
+	 font-family: arial, helvetica,sans-serif; 
+	 font-weight: bold; 
+	 font-size: 12px; 
+	 text-align:center;
+	 text-decoration: none
+}
+A.mnu:hover {
+	color: yellow;
+}
+
+
+/*STYLE DOTYCZďż˝CE BELKI MENU ORAZ ROZWIJANEGO MENU*/
+
+
+div.menuBar,
+div.menuBar a.menuButton,
+div.rollmenu,
+div.rollmenu a.menuItem {
+  font-family: "MS Sans Serif", Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+div.menuBar {
+  background-color: #e0e0e0;
+  border: 1px solid gray;
+  padding: 4px 0px 4px 0px;
+  text-align: left;
+  
+}
+
+div.menuBar a.menuButton {
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  color: #000000;
+  cursor: default;
+  left: 0px;
+  margin: 1px;
+  padding: 2px 6px 2px 6px;
+  position: relative;
+  text-decoration: none;
+  top: 0px;
+  z-index: 100;
+}
+
+div.menuBar a.menuButton:hover {
+  background-color: #5050f0;
+  border: 1px outset #e0e0e0;
+  color: #ffffff;
+}
+
+div.menuBar a.menuButtonActive,
+div.menuBar a.menuButtonActive:hover {
+  background-color: #5050f0;
+  border: 1px inset #e0e0e0;
+  color: #ffffff;
+  left: 1px;
+  top: 1px;
+}
+
+div.rollmenu {
+  background-color: #e0e0e0;
+  border: 2px outset #e0e0e0;
+  left: 0px;
+  padding: 0px 1px 1px 0px;
+  position: absolute;
+  top: 0px;
+  visibility: hidden;
+  z-index: 101;
+}
+
+div.rollmenu a.menuItem {
+  color: #000000;
+  cursor: default;
+  display: block;
+  padding: 3px 1em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+div.rollmenu a.menuItem:hover, div.menu a.menuItemHighlight {
+  background-color: #5050f0;
+  color: #ffffff;
+}
+
+div.rollmenu a.menuItem span.menuItemText {}
+
+div.rollmenu a.menuItem span.menuItemArrow {
+  margin-right: -.75em;
+}
+
+div.rollmenu div.menuItemSep {
+  border: 1px inset #e0e0e0;
+  margin: 4px 2px;
+}
+
+
+/* Submenu z przyciskami*/
+
+.submenu A {
+	padding: 2px 4px 2px 4px; 
+	background-color: #ffbea4; 
+	color: #87462f; 
+	border-color: #ff855a;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	margin-right: 4px;
+	font-family: arial;
+	text-decoration: none
+
+}
+
+.tytul {
+	clear: left;
+}
+
+
+/* Style do wiadomosci */
+
+.wiad-spis a {
+	text-decoration: none;
+	color: black;
+}
+
+.wiad-spis tr.wiad td {
+	height: 28pt;
+}
+
+.wiad-nieczytana {
+	font-weight: bold;
+}
+
+.wiad-tresc {
+	padding: 10px;
+}
+
+.wiad-skrzynki {
+	float: left; 
+	width: 15%
+}
+
+.wiad-skrzynki h3 {
+	margin: 0 0 5px 0;
+}
+
+.wiad-skrzynki ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wiad-skrzynki li {
+	margin: 0;
+	padding: 3px;
+}
+
+.wiad-skrzynki li.wiad-skrzynki-wybrana {
+	/* background-color: #DAF0A1; */
+    font-weight: bold;
+}
+
+.wiad-skrzynki li.wiad-nieczytane {
+	font-weight: bold;
+}
+
+.wiad-skrzynki li a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.wiad-prawa {
+	width: 84%;
+	margin-left: 16%;
+	
+}
+
+/* Pager */
+
+.pager {
+	margin-top: 15px;
+	text-align: center; 
+}
+
+.pager a {
+	
+	text-decoration: none;
+	color: black;
+}
+
+.pager a:hover {
+	color: red;
+}

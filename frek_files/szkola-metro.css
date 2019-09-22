@@ -1,0 +1,1092 @@
+#banerContainerParent {
+	min-height: 90px;
+	color: white;
+}
+
+#banerContainer {
+	position: relative;
+}
+
+#banerContainerParent h1 {
+	color: white;
+
+}
+
+#banerContainerParent .rokSzkolnyNagl {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+#banerContainerParent .nazwaSzkolyNagl {
+	position: absolute;
+	top: 15px;
+	width: 990px;
+	text-align: center;
+}
+
+.icon-stop {
+	color: #6a518c;
+}
+
+.banerSzkola {
+	background-color: #6a518c !important;
+}
+
+.banerSzkola .rokSzkolnyNagl {
+	top: 30px !important;
+}
+
+.banerKlasa {
+	background-color: #6a518c !important;
+}
+
+.banerKlasa .klasaSemestrNagl {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 290px;
+	z-index: 100;
+}
+
+.banerKlasa .dziennikNagl {
+	position: absolute;
+	width: 990px;
+	text-align: center;
+	top: 45px;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.banerKlasa .rokSzkolnyNagl {
+
+}
+
+.klasaSemestrNagl .semestrForm {
+	float: left;
+	margin-right: 5px;
+}
+
+.banerUczen {
+	background-color: #6a518c !important;
+}
+
+.banerUczen .uczenSemestrNagl {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	z-index: 100;
+}
+
+.banerUczen .rokSzkolnyNagl {
+	font-size:small;
+	z-index:1;
+}
+
+/*.banerUczen .semestrNagl {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 100;
+}*/
+
+.banerUczen .uczenNagl {
+	position: absolute;
+	top: 40px;
+	width: 990px;
+	text-align: center;
+}
+
+#mainContainer {
+	clear: both;
+}
+
+#status-sesji {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #666;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
+}
+#status-sesji:hover {
+    opacity: 0;
+}
+
+@keyframes blink {
+    to { color: red; }
+}
+
+#status-sesji .sesja-malo-czasu {
+    animation: blink 1s steps(2, start) infinite;
+}
+
+.submenu {
+	margin: 20px 0;
+}
+.notice {
+	margin: 18px 0;
+}
+
+.errorNotice {
+	background-color: #E3211C !important;
+	color: white !important;
+}
+.noticeInfo {
+	background-color: #B5D3F2 !important;
+}
+
+.formButtons {
+	margin: 20px 0;
+}
+
+/*
+label {
+	font-size: 20px;
+}
+*/
+
+table .tabNaglowek {
+	font-weight: bold;
+}
+
+table.przerwyNaucz td {
+	padding: 0 !important;
+	vertical-align: middle !important;
+	text-align: center;
+}
+
+table.przerwyNaucz td .checkbox {
+    margin: 2px !important;
+}
+table.przerwyNaucz td .checkbox .check {
+    margin: 0 !important;
+}
+
+table.przerwyNaucz td.niedziela {
+    background-color: #ffd1d1;
+}
+
+table.przerwyNaucz td.sobota {
+    background-color: #ffe8e8;
+}
+
+table.przerwyNaucz td .checkbox .check:after {
+    margin: 2px 0 0 -5px !important;
+}
+
+table.tab th {
+	text-align: left !important;
+}
+
+table.tab .middleAlign {
+	vertical-align: middle !important;
+}
+
+table.tab td {
+    /* koryguje problem z zamalowywaniem tlem ramek w tabeli z border collapse w FF */
+    background-clip: padding-box;
+}
+
+/*
+table.tab tbody.tabWartosc2 {
+	border-top: 1px solid black;
+}
+*/
+
+/* zajecia */
+.zajecia {
+	border: 1px solid gray !important;
+}
+
+.zajecia, .zajecia td, .zajecia tbody {
+	border: 1px solid #aaa !important;
+}
+td.rozkladWpis {
+	font-size: 13px;
+}
+.obowiazkowe, .nieobowiazkowe, .nieob_w_dziennik {
+
+}
+.obowiazkowe {
+		color: black;
+}
+.nieobowiazkowe, .nieobowiazkowe div {
+		font-style: italic !important;
+		color: gray !important;
+
+}
+.nieob_w_dziennik, .nieob_w_dziennik div {
+		/*color:black;*/
+		font-style:italic !important;
+}
+.zajecie-laczone {
+    position: relative;
+    box-shadow:3px 3px 0px 0px rgba(230,230,230,1), 6px 6px 0px 0px rgba(210,210,210,1);
+}
+
+table.grpNauczUczn .bUsun, table.grpNauczUczn .bDodaj {
+	margin: 3px 0 !important;
+}
+
+.wykreslony td {
+	/*background-color: #DEDEDE;*/
+	color: silver;
+	text-decoration: line-through;
+	/*
+	background-image: url("../wychowawca/grafika/szara_kropka.gif");
+	background-repeat: repeat-x;
+	background-position: left 45%;
+	*/
+}
+
+.navButton, .navButtonInacct {
+	background-color: #426BA2;
+	color: white !important;
+	padding: 5px 8px;
+	border-radius: 50%;
+}
+
+
+.navButtonInacct {
+	background-color: #B5D3F2;
+}
+
+.navB {
+	margin-bottom: 10px;
+}
+
+.tab-dziennik {
+	width: 100%;
+}
+
+.command-button {
+    margin-bottom: 8px !important;
+    margin-right: 3px !important;
+}
+.metro button.green {
+    background-color: #60a917 !important;
+    color: #ffffff !important;
+}
+.metro button.green2 {
+    background-color: #1fd864 !important;
+    color: #ffffff !important;
+}
+.metro button.green3 {
+    background-color: #1bbe58 !important;
+    color: #ffffff !important;
+}
+.metro button.green4 {
+    background-color: #17a44c !important;
+    color: #ffffff !important;
+}
+.metro button.green5 {
+    background-color: #89cf1d !important;
+    color: #ffffff !important;
+}
+.metro button.blue {
+    background-color: #2490f0 !important;
+    color: #ffffff !important;
+}
+.metro button.violet {
+    background-color: #9136de !important;
+    color: #ffffff !important;
+}
+.metro button.violet2 {
+    background-color: #8848b3 !important;
+    color: #ffffff !important;
+}
+.metro button.violet3 {
+    background-color: #c421a3 !important;
+    color: #ffffff !important;
+}
+.metro .command-button.cobalt {
+    background-color: #4475d6 !important;
+    color: #ffffff !important;
+}
+.metro .command-button.orange {
+    background-color: #f0a30a !important;
+    color: #ffffff !important;
+}
+.metro .command-button.turquoise {
+    background-color: #15cfaa !important;
+    color: #ffffff !important;
+}
+.metro .command-button.turquoise2 {
+    background-color: #10b6ac !important;
+    color: #ffffff !important;
+}
+.metro .command-button.yellow {
+    background-color: rgb(240, 210, 0) !important;
+    color: #ffffff !important;
+}
+.metro button.orange2 {
+    background-color: #f2a003 !important;
+    color: #ffffff !important;
+}
+.metro button.red {
+    background-color: red !important;
+    color: #ffffff !important;
+}
+.metro button.red2 {
+    background-color: rgb(255, 42, 42) !important;
+    color: #ffffff !important;
+}
+
+.metro .input-control select, .metro .input-control input {
+  font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+.cb-3-in-row {
+    height: 75px;
+    width: 297px !important;
+}
+
+#zawartosc {
+	min-height: 300px;
+}
+
+#wybor-panelu {
+	color: white;
+	position: absolute;
+	list-style: none;
+	z-index: 199;
+	top: 10px;
+	left: 80px;
+	font-size: 28px;
+	font-family: 'Open Sans Light';
+}
+
+#wybor-panelu a {
+	color: white;
+}
+
+#wybor-panelu .dropdown-menu {
+	width: 250px;
+	background-color: rgba(51, 51, 51, 0.9);
+	border: 0;
+	margin-top: 8px;
+}
+
+#wybor-panelu ul a {
+	font-size: 20px !important;
+	font-family: 'Open Sans Light'
+}
+
+#panel-szkoly-dzienniki-klas{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 10px
+}
+
+#panel-szkoly-dzienniki-klas .panel {
+	display: block;
+	width: 235px;
+	float: left;
+	margin: 5px;
+}
+
+#panel-szkoly-dzienniki-klas .panel-header {
+	background-color: #6a518c;
+}
+
+#panel-szkoly-dzienniki-klas .panel-content ul {
+	list-style: none;
+}
+
+#panel-szkoly-dzienniki-klas .panel-content a {
+	color: black;
+	margin: 5px ;
+}
+.tab-dziennik .obszary-info {
+	width: 15px;
+	height: 130px;
+	vertical-align: bottom;
+
+}
+
+.tab-dziennik .obszary-info > div {
+	transform: translate(55px, 53px) rotate(270deg);
+	width: 15px;
+	height: 130px;
+}
+
+.rot270 {
+	transform: rotate(270deg) translate(10px, 0);
+	width: 30px;
+
+}
+.dostep:first-child {
+	border-top: 1px dashed black;
+}
+.dostep {
+	border-bottom: 1px dashed black;
+	padding: 20px;
+}
+
+.dostep .dostep-komu {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.dostep .dostep-dane {
+}
+
+
+.command-button-label {
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.autocomplete-suggestions { border: 1px solid silver; background-color: #fff; overflow: hidden}
+.autocomplete-suggestion { cursor:default; text-align:left; max-height:350px; overflow:auto; padding: 7px; cursor: pointer}
+.autocomplete-selected { background-color:#F0F0F0; }
+.autocomplete-suggestion div { padding:2px 5px; white-space:nowrap; overflow:hidden; }
+.autocomplete-suggestion strong { font-weight:normal; color:#3399FF; }
+
+#statusy-uwag {
+	font-family: iconFont, sans-serif;
+}
+
+.uwaga-negatywna {
+	font-family: iconFont, sans-serif;
+	color: red;
+}
+/*
+.uwaga-negatywna:before {
+	content: "\e082"
+}
+*/
+.uwaga-neutralna {
+	font-family: iconFont, sans-serif;
+	color: black;
+}
+/*
+.uwaga-neutralna:before {
+	content: "\e08b"
+}
+*/
+.uwaga-pozytywna {
+	font-family: iconFont, sans-serif;
+	color: green;
+}
+/*
+.uwaga-pozytywna:before {
+	content: "\e081"
+}
+*/
+#ajax-loader {
+  margin: 0px auto;
+  margin-top: 100px;
+}
+#ajax-loader p {
+  text-align: center;
+}
+#ajax-loader p.animated {
+  padding-bottom: 7px;
+  background: url("../grafika/animated_loader.gif") #fff 0 bottom no-repeat;
+}
+
+#buttonfiltr {
+	margin-bottom: 10px;
+}
+
+/* Poprawka usuwająca zawijanie miesiecy w kalendarzu */
+.metro .calendar .calendar-header .btn-select-month {
+	width: 130px !important;
+
+}
+
+.ng-hide {
+    display: none !important;
+}
+
+/* Style do definiowania zajęć */
+.parowanie {
+    display: table;
+}
+
+.parowanie-lista {
+    display: table-cell;
+    width: 30%;
+    border: 0.5em solid white;
+    background-color: #ddd;
+}
+
+#zajecia-grup .parowanie-lista {
+    font-size: 0.8em;
+    width: 25%;
+}
+#zajecia-grup .grupy {
+    width: 50%;
+}
+
+#zajecia-grup .grupy h6 {
+    clear: left;
+}
+#zajecia-grup .parowanie .zajecie-klocek {
+    font-size: 0.95em;
+}
+
+#zajecia-grup .grupy .zajecie-klocek {
+    width: 130px;
+    float: left;
+    margin: 0.4em;
+}
+
+.nauczyciele {
+    width: 25%;
+}
+
+.parowanie-filtr-nazwa {
+    height: 37px;
+}
+
+.parowanie-lista-head {
+    min-height: 2.8em;
+    background-color: white;
+}
+
+.parowanie-lista-content {
+    height: 470px;
+    overflow-y: scroll;
+}
+.parowanie-lista-head h5 {
+    margin-top: 0;
+}
+
+.zajecie-klocek {
+    background-color: white;
+    padding: 0.7em;
+    margin: 0.7em;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+
+.zajecie-nietygodniowe {
+    background-image: url('../grafika/paski-przekatna-szare.png');
+}
+
+.zajecie-klocek .przedmiot {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 1.3em;
+}
+.zajecie-klocek .nauczyciel {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 1.3em;
+}
+
+.zajecie-klocek .grupa {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 1.3em;
+}
+
+.uwaga {
+    color: #EE5757 !important;
+}
+.zajecie-klocek .uwaga {
+    width: 1em;
+    float: right;
+    margin-top: -1em;
+    color: #EE5757 !important;
+}
+
+.zajecie-klocek .licznosc-zajecia {
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.zajecie-szczegoly .uwaga {
+    margin-left: 0.5em;
+}
+.zajecie-szczegoly .frame {
+    width: 100%;
+}
+.zajecie-klocek-podniesiony {
+    box-shadow: 0px 2px 2px #888;
+    z-index: 100;
+    /* width: 260px; */
+}
+
+.zajecie-klocek-podniesiony .przedmiot {
+    display: block !important;
+}
+
+.zajecie-klocek-podniesiony .grupa {
+    display: block !important;
+}
+
+.zajecie-klocek-usun-przycisk {
+    float: right;
+    background-color: white !important;
+    padding: 0.2em 0.1em 0.1em 0 !important;
+}
+.zajecie-klocek-usun-przycisk i {
+    color: gray !important;
+}
+
+.par-nauczyciele-przedmioty, .par-nauczyciele-przedmioty-grupy {
+    padding-bottom: 70px;
+}
+
+.par-nauczyciele-przedmioty .przedmiot {
+    display: none;
+}
+
+.par-nauczyciele-przedmioty-grupy .grupa {
+   display: none;
+}
+
+.par-nauczyciele-przedmioty:only-child {
+    min-height: 450px;
+}
+.par-nauczyciele-przedmioty:only-child .h6 {
+    display: none;
+}
+.par-nauczyciele-przedmioty h6, .par-nauczyciele-przedmioty-grupy h6 {
+    background-color: #eee;
+    color: #333;
+    padding: 0.5em;
+    font-size: smaller;
+}
+
+.nauczyciel-przedmiot-klocek .przedmiot {
+    display: none;
+}
+.nauczyciel-przedmiot-grupa-klocek .grupa {
+    display: none;
+}
+
+.zajecia-zasobnik {
+    min-height: 100px;
+    border: 1px solid #ddd;
+    background-color: rgba(235, 235, 235, 0.9);
+    margin-bottom: 1em;
+    height: 150px;
+    overflow-y: scroll;
+    /* min-height: 176px; */
+
+}
+
+.zajecia-zasobnik .zajecie-klocek {
+    width: 10em;
+    float: left;
+    font-size: 0.7em;
+    padding: 0.3em;
+}
+
+.zajecia-zasobnik .dodaj-zajecie {
+    border: 1px dashed #ccc;
+    height: 4em;
+    background-color: #eee;
+    cursor: pointer;
+    color: gray;
+}
+
+.zajecia-zasobnik .dodaj-zajecie:hover {
+    border: 1px dashed gray;
+    color: black;
+
+}
+.plan-zajec .zajecie-klocek, .zajecia-wszystkie-lok .zajecie-klocek {
+    width: 11em;
+    font-size: 0.8em;
+    padding: 0.3em;
+    line-height: normal;
+    margin: 0.4em;
+}
+
+.zajecia-wszystkie-lok {
+    margin-top: 1em;
+}
+
+.zajecia-wszystkie-lok .zajecie-klocek {
+    float: left;
+    cursor: default;
+    font-size: 0.7em;
+}
+.plan-zajec td {
+    padding: 0.4em !important;
+    width: 10em;
+    height: 61px;
+    transition: background-color 0.5s;
+    /* transition-timing-function: ease; */
+}
+
+.plan-zajec th {
+    border: 1px solid #aaa !important;
+}
+
+.plan-zajec .nr-godz {
+    width: 2em;
+}
+
+.zajecie-plan-zajec-nieaktywne {
+    opacity: 0.65;
+    cursor: default;
+}
+
+.lokalizacja-over {
+    background-color: #eee;
+}
+.lokalizacja-niedostepna {
+    background-color: #FFCECE;
+}
+
+.ngdialog {
+}
+
+.ngdialog .ngdialog-content {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 29em;
+    height: 675px;
+    box-shadow: 3px 3px 3px #444;
+    border: 1px solid silver;
+    /* border-radius: 5px; */
+    padding: 2.2em 1.5em 1.5em;
+    overflow: auto;
+}
+
+.ngdialog .ngdialog-content .formButtons {
+    margin-bottom: 0;
+}
+
+.ngdialog .ngdialog-close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.zajecie-szczegoly label {
+    font-weight: bold;
+}
+
+#zajecia-grup {
+    top: 5px;
+    padding: 0.3em;
+    /* padding-top: 2em; */
+    width: 910px;
+    z-index: 999;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 0.3em;
+    /* position: relative; */
+}
+
+.edytor-zajec .fixedsticky-on {
+    /* background-color: rgba(255, 255, 255, 0.7) !important; */
+}
+
+.zajecia-akcje {
+    width: 200px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-bottom: 7px;
+    vertical-align: middle;
+}
+
+.pinezka {
+    cursor: pointer;
+    width: 19px;
+    height: 21px;
+}
+
+.zajecia-akcje .pinezka {
+    float: right;
+}
+
+.btn-edytuj-zajecia {
+    float: right;
+    margin-right: 10px !important;
+}
+.pinezka-on {
+    background-image: url('../grafika/pinezka_on.png');
+}
+
+.pinezka-off {
+    background-image: url('../grafika/pinezka_off.png');
+}
+
+.black-outline {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.prosze-czekac-modal-wrap {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background-color: rgba(0,0,0,.4);
+}
+
+.prosze-czekac-modal {
+    background-color: white;
+    border: 1px solid silver;
+    box-shadow: 3px 3px 3px #444;
+    width: 200px;
+    height: 100px;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.prosze-czekac-modal-tekst {
+   line-height: 100px;
+   text-align: center;
+}
+
+.zajecia-edycja-zapisz {
+/*
+    position: fixed;
+    bottom: 20px;
+    margin-left: 800px;
+*/
+
+    text-align: right;
+    margin-top: 1em
+}
+
+.zajecia-zasobnik-opis {
+    /*
+    margin: -1em 0 0;
+    padding: 0;
+    */
+    margin: -0.5em 0 0;
+    vertical-align: middle;
+}
+.zajecia-zasobnik-opis h4 {
+   margin-left: 0.5em;
+   color: gray;
+   display: none;
+}
+
+.fixedsticky-on .zajecia-zasobnik-opis h4 {
+    display: block;
+}
+.zajecie-szczegoly .frames .frame {
+   height: 535px;
+   overflow-y: auto;
+   padding-bottom: 12px;
+   padding-top: 15px;
+}
+.zajecie-szczegoly .dane-podstawowe {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+.zajecie-szczegoly .grupa-nauczania {
+   font-size: smaller; 
+}
+.zajecie-szczegoly .nazwa-przedmiotu {
+}
+.zajecie-szczegoly .nauczyciel-prowadzacy {
+    margin-bottom: -4px;
+}
+
+.wszystkie-zaj-w-lok-przyc {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    width: 10px;
+    height: 10px
+}
+
+.wszystkie-zaj-w-lok-przyc:hover {
+    background-image: url('../grafika/trojkat10x10szary.png');
+    background-repeat: no-repeat;
+}
+
+.button-dropdown .dropdown-menu li a {
+    font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+.dane-klasy .panel-content .group-content .list:last-child {
+    border-bottom: none !important;
+}
+
+.dane-klasy .panel {
+    margin-bottom: 10px;
+}
+
+.zaj-pozaplanowe {
+    font-size: smaller;
+    border: 1px solid gray;
+    padding: 5px;
+    height: 68px;
+    overflow: hidden;
+    margin: 5px;
+    float: left;
+    width: 217px;
+    position: relative;
+}
+.zaj-pozaplanowe a {
+    color: black;
+}
+.zaj-pozaplanowe a:hover {
+    color: black;
+}
+.zaj-pozaplanowe .usun-przyc {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: gray;
+    font-size: smaller;
+}
+
+.zaj-pozaplanowe .zaj-pozaplanowe-pole {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 17px;
+    white-space: nowrap;
+}
+.zaj-pozaplanowe-przedm {
+    font-weight: bold !important;
+    width: 90%;
+}
+
+.zaj-zmiana-typow {
+    font-size: smaller;
+    border: 1px solid gray;
+    padding: 5px;
+    height: 77px;
+    overflow: hidden;
+    margin: 5px;
+    float: left;
+    width: 217px;
+    position: relative;
+}
+
+.zaj-zmiana-typow .zaj-zmiana-typow-pole {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 17px;
+    white-space: nowrap;
+}
+.zaj-zmiana-typow-przedm {
+    font-weight: bold !important;
+    width: 90%;
+}
+.zaj-zmiana-typow a {
+    color: black;
+}
+.zaj-zmiana-typow a:hover {
+    color: black;
+}
+.nieokreslone {
+    background: #FFCECE;
+	color: black;
+}
+
+.wyroznienie-zmiany {
+    background-color: #ccffcc;
+}
+/* Wyszazenie zablokowanego przycisku zapisz w edycji szkicu */
+button.button.warning[disabled="disabled"] {
+    background-color: gray !important;
+}
+
+#skroty-nawigacji {
+    display: none;
+    position: fixed; 
+    left: 5px; 
+    top: 222px; 
+    border: 1px solid silver; 
+    background-color: white; 
+    padding: 8px 5px 0 8px;
+}
+
+#skroty-nawigacji button {
+    width: 50px !important;
+    height: 50px;
+    /*opacity: 0.7;*/
+}
+
+#skroty-nawigacji button:hover {
+    opacity: 1.0;
+}
+
+#skroty-nawigacji button i {
+   font-size: 18px !important; 
+}
+
+.skroty-nawigacji-belka {
+    text-align: left;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.skroty-nawigacji-belka i {
+    font-size: 14px;
+    border: 1px solid silver;
+    padding: 3px;
+    margin: 0 3px 0 0 ;
+}
+
+/* Wiadomosci */
+
+table.tab tr.wiad:hover {
+    background-color: #FDFFD1;
+}
+
+table.tab tr.wiad .klikalne {
+    cursor: pointer;
+}
+
+.wiad-skrzynki ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wiad-skrzynki ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.wiad-skrzynki li.wiad-skrzynki-wybrana {
+	/* background-color: #DAF0A1; */
+    font-weight: bold;
+}
+
+.button-link {
+    background-color: transparent !important;
+    font-family: inherit !important; 
+    font-size: inherit !important;
+    text-align: left !important;
+    margin: 0 !important;
+}
+
+#klaser-dostepny {
+    display: none;
+}

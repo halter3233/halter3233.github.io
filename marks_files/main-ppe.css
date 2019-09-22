@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+body{
+	margin:0px;
+	overflow-y: scroll;
+
+}
+
+#menuContainerParent{
+	background-color: black !important;
+}
+
+#menuContainer {
+	width: 998px;
+	margin: 0 auto;
+	margin-top: 0px;
+}
+
+
+#banerContainerParent{
+}
+
+#banerContainer {
+	width: 998px;
+	margin: 0 auto;
+	margin-top: 0px;
+	padding: 3px 3px 3px 3px;
+}
+
+#mainContainerParent{
+	background-color: #EFEAE3 !important;
+}
+
+#mainContainer {
+	width: 998px;
+	margin: 0 auto;
+	margin-top: 0px;
+	padding: 3px 3px 3px 3px;
+	background-color: #EFEAE3;
+}
+
+#footerContainerParent{
+	background-color: #333 !important;
+}
+
+#footerContainer{
+	color:white;
+	width: 998px;
+	margin: 0 auto;
+	margin-top: 0px;
+	padding: 10px 3px 3px 3px;
+	background-color: #333;
+}
+
+#zawartosc {
+	width: 960px;
+	background-color: white;
+	border: 1px solid #cccccc;
+	padding: 20px 40px;
+}
+
+.lblFileName{
+	font-size: 20px;
+}
+
+.divForm{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.divButtons{
+	margin-bottom: 25px;
+}
+
+iframe{
+	border:none;
+	overflow-y:hidden;
+}
+
+
