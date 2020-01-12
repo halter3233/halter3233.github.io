@@ -171,7 +171,7 @@ var url = '../pomoc/PANEL_UCZNIA.htm#_oceny';
     klaserLicencja = true;
         //jeśli zainicjowano zmienne sesyjne
         liczbaWiadomosci = 0;
-        liczbaWiadomosciCzas = {"date":"2019-12-11 08:04:22","timezone_type":3,"timezone":"Europe\/Warsaw"};
+        liczbaWiadomosciCzas = {"date":"2020-01-12 18:14:40","timezone_type":3,"timezone":"Europe\/Warsaw"};
 
 $("#ShowHelp").on('click', function(){
     $.Dialog({
@@ -216,6 +216,7 @@ $("#ShowHelp").on('click', function(){
 		</div>
 		</form>
 				<form method="post" action="https://m-bstok.ppe.wrotapodlasia.pl/ppe/PPE.Edziennik/rodzic/?dz=wybor_ucznia" name="uczen_zm" style="display: inline-block">
+			<input type="hidden" name="_token" value="aaQyG32MNVBHaYhfXrIHLsbCTf1Wovk46nV370i+O6VbsK822MtJMUOlrujAIhP0uepNa+0waQzCX78ENPr4oQ==">
 			<input type="hidden" name="zmiana_ucznia" value="true">
 			<div class="input-control select size2">
 				<select name="id" onchange="forms.uczen_zm.submit()">
@@ -261,18 +262,22 @@ table.oceny th{
         <tr>
             <th rowspan="2" style="vertical-align:middle">Przedmiot</th>
             <th rowspan="2" style="vertical-align:middle">Oceny bieżące</th>
+                                <th colspan="3" style="text-align:center !important">Średnia</th>
                             <th rowspan="2" style="vertical-align:middle;">Ocena<br>semestralna</th>
             <th rowspan="2" style="vertical-align:middle;">Ocena<br>roczna</th>
             <th rowspan="2" style="vertical-align:middle;">Ocena<br>końcowa</th>
         </tr>
         <tr>
-                    </tr>
+                            <th title="średnia atytmetyczna z ocen z bieżącego semestru">arytm.</th>
+                <th title="średnia ważona z ocen z bieżącego semestru">ważona</th>
+                <th title="średnia ważona ze wszystkich ocen w roku szkolnym">ważona roczna</th>
+                        </tr>
     </thead>
     <tbody>
         <tr>
             <th style="background-color: grey; color: white">Zachowanie</th>
             <td></td>
-                        <td class="tabWartosc2" style="font-weight:bold"></td>
+            <td colspan="3"></td>            <td class="tabWartosc2" style="font-weight:bold"></td>
             <td class="tabWartosc2" style="font-weight:bold"></td>
             <td class="tabWartosc2" style="font-weight:bold"></td>
         </tr>
@@ -284,6 +289,9 @@ table.oceny th{
                                                     
                                                     
                                         
+                            <td class="tabWartosc2"></td>
+                <td class="tabWartosc2"></td> 
+                <td class="tabWartosc2"></td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -294,16 +302,21 @@ table.oceny th{
                 <tr>
                 <th>Historia i społeczeństwo</th>
                 <td class="tabWartosc2">
-                                        Kartkówka: <span style="font-weight: bold">5</span>;&nbsp;  
-                                    powstania narodowe - praca: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    : <span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">4+</span>;&nbsp;  
+                                        Kartkówka&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">5</span>;&nbsp;  
+                                    karty pracy&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">2+</span>;&nbsp;  
+                                    powstania narodowe - praca&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    praca na lekcji&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    &nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">4+</span>;&nbsp;  
                             </td>
             
                                                     
                                                     
                                         
+                            <td class="tabWartosc2">2.80</td>
+                <td class="tabWartosc2">3.17</td> 
+                <td class="tabWartosc2">3.17</td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                dostateczny                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -312,19 +325,23 @@ table.oceny th{
                 <tr>
                 <th>Język angielski</th>
                 <td class="tabWartosc2">
-                                        test: <span style="font-weight: bold">4</span>;&nbsp;<span style="font-weight: bold">4</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;  
-                                    kartkówka: <span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">2</span>;&nbsp;<span style="font-weight: bold">2</span>;&nbsp;<span style="font-weight: bold">3</span>;&nbsp;  
-                                    mówienie: <span style="font-weight: bold">+</span>;&nbsp;  
-                                    pisanie: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    praca na lekcji: <span style="font-weight: bold">++</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;  
-                                    : <span style="font-weight: bold">++</span>;&nbsp;  
+                                        prezentacja&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    test&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">4</span>;&nbsp;<span style="font-weight: bold">4</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;  
+                                    kartkówka&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">2</span>;&nbsp;<span style="font-weight: bold">2</span>;&nbsp;<span style="font-weight: bold">3</span>;&nbsp;  
+                                    mówienie&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">+</span>;&nbsp;  
+                                    pisanie&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    praca na lekcji&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">++</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;  
+                                    &nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">++</span>;&nbsp;  
                             </td>
             
                                                     
                                                     
                                         
+                            <td class="tabWartosc2">3.00</td>
+                <td class="tabWartosc2">3.00</td> 
+                <td class="tabWartosc2">3.00</td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                dostateczny                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -333,19 +350,25 @@ table.oceny th{
                 <tr>
                 <th>Język polski</th>
                 <td class="tabWartosc2">
-                                        interpretacja: <span style="font-weight: bold">2</span>;&nbsp;<span style="font-weight: bold">3</span>;&nbsp;  
-                                    spr. z Dziadów cz. III: <span style="font-weight: bold">2+</span>;&nbsp;  
-                                    spr. z Makbeta: <span style="font-weight: bold">2</span>;&nbsp;  
-                                    test do tekstu: <span style="font-weight: bold">2-</span>;&nbsp;  
-                                    p.dom.: <span style="font-weight: bold">-</span>;&nbsp;<span style="font-weight: bold">1</span>;&nbsp;  
-                                    praca w klasie: <span style="font-weight: bold">-</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;  
+                                        interpretacja&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">2</span>;&nbsp;<span style="font-weight: bold">3</span>;&nbsp;  
+                                    rozprawka&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">-</span>;&nbsp;  
+                                    spr. z Dziadów cz. III&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">2+</span>;&nbsp;  
+                                    spr. z Makbeta&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">2</span>;&nbsp;  
+                                    spr. z romanyzmu&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">2</span>;&nbsp;  
+                                    test do tekstu&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">2-</span>;&nbsp;  
+                                    aktywność&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">+</span>;&nbsp;  
+                                    p.dom.&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">-</span>;&nbsp;<span style="font-weight: bold">1</span>;&nbsp;  
+                                    praca w klasie&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">-</span>;&nbsp;<span style="font-weight: bold">5</span>;&nbsp;  
                             </td>
             
                                                     
                                                     
                                         
+                            <td class="tabWartosc2">2.41</td>
+                <td class="tabWartosc2">2.29</td> 
+                <td class="tabWartosc2">2.29</td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                dopuszczający                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -354,25 +377,32 @@ table.oceny th{
                 <tr>
                 <th>Język rosyjski</th>
                 <td class="tabWartosc2">
-                                        klas pory roku: <span style="font-weight: bold">3</span>;&nbsp;  
-                                    klas sklep spoz: <span style="font-weight: bold">2</span>;&nbsp;  
-                                    klas ubior: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    kartk przymiotniki: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    kartk st wyzszy: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    wiersz o jesieni: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    czytanie: <span style="font-weight: bold">1+</span>;&nbsp;<span style="font-weight: bold">2-</span>;&nbsp;<span style="font-weight: bold">4</span>;&nbsp;  
-                                    odp jesien: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    odp opis ubior: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    odp sklep: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    odp wiosna: <span style="font-weight: bold">4</span>;&nbsp;  
-                                    odp zima: <span style="font-weight: bold">2+</span> 
-                            </td>
+                                        klas pory roku&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">3</span>;&nbsp;  
+                                    klas sklep spoz&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">2</span>;&nbsp;  
+                                    klas ubior&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    kartk przymiotniki&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    kartk st wyzszy&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    przepis salatka&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">2-</span>;&nbsp;  
+                                    wiersz o bn&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">4-</span>;&nbsp;  
+                                    wiersz o jesieni&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    czytanie&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1+</span>;&nbsp;<span style="font-weight: bold">2-</span>;&nbsp;<span style="font-weight: bold">4</span>;&nbsp;  
+                                    odp fast food&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    odp jesien&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    odp opis ubior&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    odp sklep&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    odp wiosna&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">4</span>;&nbsp;  
+                                    odp zima&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">2+</span>;&nbsp;  
+                                    praca dom&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    &nbsp;</td>
             
                                                     
                                                     
                                         
+                            <td class="tabWartosc2">1.69</td>
+                <td class="tabWartosc2">1.75</td> 
+                <td class="tabWartosc2">1.75</td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                dopuszczający                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -380,19 +410,24 @@ table.oceny th{
         </tr>
                 <tr>
                 <th>Matematyka</th>
-                <td class="tabWartosc2"><span style="font-weight: bold"></span> 
-                                    Funkcja wymierna - sprawdzian: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    Funkcje wykładnicze i logarytmy - sprawdzian: <span style="font-weight: bold">2+</span>;&nbsp;  
-                                    Logarytmy - kartkówka: <span style="font-weight: bold">1+</span>;&nbsp;  
-                                    Nierówności kwadratowe - kartkówka: <span style="font-weight: bold"></span>;&nbsp;<span style="font-weight: bold">2+</span>;&nbsp;  
-                                    Potęgi - kartkówka: <span style="font-weight: bold">2+</span>;&nbsp;  
-                                    Sumy algebraiczne - kartkówka: <span style="font-weight: bold">2</span>;<span style="font-weight: bold"></span><span style="font-weight: bold"></span></td>
+                <td class="tabWartosc2">
+                                        Funkcja wymierna - poprawa sprawdzianu&nbsp;<span style="font-size: smaller">(w: 3)</span>;&nbsp;  
+                                    Funkcje wykładnicze i logarytmy - sprawdzian&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">2+</span>;&nbsp;  
+                                    Logarytmy - kartkówka&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1+</span>;&nbsp;  
+                                    Nierówności kwadratowe - kartkówka&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">2+</span>;&nbsp;  
+                                    Potęgi - kartkówka&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">2+</span>;&nbsp;  
+                                    Sumy algebraiczne - kartkówka&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">2</span></td>
             
                                                     
                                                     
                                         
+                            <td class="tabWartosc2">1.72</td>
+                <td class="tabWartosc2">1.75</td> 
+                <td class="tabWartosc2">1.75</td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                dopuszczający                                    <br>
+                    
+                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -401,15 +436,23 @@ table.oceny th{
                 <tr>
                 <th>Przyroda</th>
                 <td class="tabWartosc2">
-                                        Sprawdzian Rewolucjoniści: <span style="font-weight: bold">4</span>;&nbsp;  
-                                    K Rewolucjoniści: <span style="font-weight: bold">nb</span>;&nbsp;  
+                                        Sprawdzian Rewolucjoniści&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">4</span>;&nbsp;  
+                                    K Rewolucjoniści&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">nb</span>;&nbsp;  
+                                    Aktywność&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">nb</span>;&nbsp;  
                             </td>
             
                                                     
                                                     
                                         
+                            <td class="tabWartosc2">2.00</td>
+                <td class="tabWartosc2">2.50</td> 
+                <td class="tabWartosc2">2.50</td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                dopuszczający                                    <br>
+                    <span style="font-family: inherit; opacity:0.6;">
+                        dopuszczający <small>(proponowana)</small>
+                    </span>
+                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -418,19 +461,24 @@ table.oceny th{
                 <tr>
                 <th>Wiedza o społeczeństwie</th>
                 <td class="tabWartosc2">
-                                        życie społeczne- sprawdzian wiadomości: <span style="font-weight: bold">1</span><span style="font-weight: bold"></span>;&nbsp;  
-                                    kart nierówności społ.: <span style="font-weight: bold">2+</span>;&nbsp;  
-                                    kart socjalizacja: <span style="font-weight: bold">1</span>;&nbsp;  
-                                    nieprzygotowanie: <span style="font-weight: bold">np</span>;&nbsp;<span style="font-weight: bold">np</span>;&nbsp;  
-                                    projekt wycieczka: <span style="font-weight: bold">3-</span>;&nbsp;  
-                                    rozprawka: <span style="font-weight: bold">2+</span>;&nbsp;  
+                                        spr naród&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">3</span>;&nbsp;  
+                                    życie społeczne- sprawdzian wiadomości&nbsp;<span style="font-size: smaller">(w: 3)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    kart kultura&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    kart nierówności społ.&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">2+</span>;&nbsp;  
+                                    kart socjalizacja&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;  
+                                    nieprzygotowanie&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">np</span>;&nbsp;<span style="font-weight: bold">np</span>;&nbsp;  
+                                    projekt wycieczka&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">3-</span>;&nbsp;  
+                                    rozprawka&nbsp;<span style="font-size: smaller">(w: 1)</span>: <span style="font-weight: bold">2-</span>;&nbsp;  
                             </td>
             
                                                     
                                                     
                                         
-                        <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                            <td class="tabWartosc2">1.86</td>
+                <td class="tabWartosc2">1.82</td> 
+                <td class="tabWartosc2">1.82</td>
+                        <td class="tabWartosc2" style="font-weight:bold;opacity:0.6">
+                dopuszczający <small>(proponowana)</small>                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -439,14 +487,17 @@ table.oceny th{
                 <tr>
                 <th>Wychowanie fizyczne</th>
                 <td class="tabWartosc2">
-                                        frekwencja2: <span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">2</span>;&nbsp;  
+                                        frekwencja2&nbsp;<span style="font-size: smaller">(w: 2)</span>: <span style="font-weight: bold">1</span>;&nbsp;<span style="font-weight: bold">2</span>;&nbsp;  
                             </td>
             
                                                     
                                                     
                                         
+                            <td class="tabWartosc2">1.50</td>
+                <td class="tabWartosc2">1.50</td> 
+                <td class="tabWartosc2">1.50</td>
                         <td class="tabWartosc2" style="font-weight:bold;opacity:1">
-                                            </td>
+                zwolniony                            </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
                                             </td>
             <td class="tabWartosc2" style="font-weight:bold;opacity:1">
@@ -455,10 +506,22 @@ table.oceny th{
     </tbody>
 </table>
 
+    
+<div class="notice noticeInfo"><strong>Uwaga!</strong> Waga obszaru oceniania jest wyświetlana w nawiasie obok jego nazwy</div>
+
+    <div class="panel collapsed" data-role="panel">
+        <div class="panel-header" style="font-size:16px">
+            Jak liczona jest średnia ważona?
+        </div>
+        <div class="panel-content" style="width: 700px; display: none;">
+            <img src="./marks_files/przyklad_srednia.jpg">
+        </div>
+        </div>
+    </div>
 </div> <!-- zawartosc -->
 </div> <!-- mainContainerParent -->
 </div> <!-- mainContainer -->
-</div> <!-- wrap -->
+ <!-- wrap -->
 <div style="margin-top: 10px; width: 700px ; margin-left: auto ;
   margin-right: auto ;"><img src="./marks_files/programRegionalny.png" alt="aaa"></div>
 
