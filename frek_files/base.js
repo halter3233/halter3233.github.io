@@ -842,3 +842,22 @@ function eDziennikGetCookie(nazwa) {
     var czesci = wartosc.split("; " + nazwa + "=");
     if (czesci.length == 2) return czesci.pop().split(";").shift();
 }
+
+
+
+
+
+function changeLayout(){
+    var currentPath = window.location.pathname;
+    currentPath = currentPath.replace('/ppe/PPE.Edziennik','');
+    currentPath = currentPath[0] == '/' ? currentPath.substr(1) : currentPath;
+    var paramsQuery = window.location.search;
+    if(currentPath.search("prymus-")===-1){
+        //przenies do prymusa
+        window.location.href = "../prymus-"+currentPath+paramsQuery;
+    }else{
+        //przenies do zwyklego
+        var oldLayoutPath = currentPath.replace("prymus-","");
+        window.location.href = "../"+oldLayoutPath+paramsQuery;
+    }
+}

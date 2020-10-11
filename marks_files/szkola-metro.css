@@ -203,6 +203,14 @@ table.tab tbody.tabWartosc2 {
 .zajecia, .zajecia td, .zajecia tbody {
 	border: 1px solid #aaa !important;
 }
+.zajecia-print {
+	border:3px solid gray !important;
+}
+
+.zajecia-print, .zajecia-print td, .zajecia-print tbody {
+	border: 3px solid #000000 !important;
+}
+
 td.rozkladWpis {
 	font-size: 13px;
 }
@@ -218,7 +226,7 @@ td.rozkladWpis {
 
 }
 .nieob_w_dziennik, .nieob_w_dziennik div {
-		/*color:black;*/
+		color:black;
 		font-style:italic !important;
 }
 .zajecie-laczone {
@@ -344,7 +352,7 @@ table.grpNauczUczn .bUsun, table.grpNauczUczn .bDodaj {
 }
 
 #zawartosc {
-	min-height: 300px;
+	min-height: 100px !important;
 }
 
 #wybor-panelu {
@@ -970,11 +978,50 @@ table.grpNauczUczn .bUsun, table.grpNauczUczn .bDodaj {
     height: 17px;
     white-space: nowrap;
 }
+
+.zaj-pozaplanowe-new {
+    overflow: hidden;
+}
+.zaj-pozaplanowe-new a {
+    color: black;
+}
+.zaj-pozaplanowe-new a:hover {
+    color: black;
+}
+.zaj-pozaplanowe-pole-new {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .zaj-pozaplanowe-przedm {
     font-weight: bold !important;
     width: 90%;
 }
 
+.zaj-zmiana-typow-new {
+    font-size: smaller;
+    /* border: 1px solid gray; */
+    padding: 5px;
+    height: 77px;
+    overflow: hidden;
+    margin: 5px;
+    float: left;
+    /* width: 217px; */
+    position: relative;
+}
+.zaj-zmiana-typow-new .zaj-zmiana-typow-pole {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 17px;
+    white-space: nowrap;
+}
+.zaj-zmiana-typow-new a {
+    color: black;
+}
+.zaj-zmiana-typow-new a:hover {
+    color: black;
+}
 .zaj-zmiana-typow {
     font-size: smaller;
     border: 1px solid gray;
@@ -986,7 +1033,6 @@ table.grpNauczUczn .bUsun, table.grpNauczUczn .bDodaj {
     width: 217px;
     position: relative;
 }
-
 .zaj-zmiana-typow .zaj-zmiana-typow-pole {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1020,12 +1066,18 @@ button.button.warning[disabled="disabled"] {
     display: none;
     position: fixed; 
     left: 5px; 
-    top: 222px; 
+    bottom: 5px; 
+    margin-bottom: 20px;
     border: 1px solid silver; 
     background-color: white; 
-    padding: 8px 5px 0 8px;
+    padding: 8px 5px 5px 8px;
 }
-
+.skroty-nawigacji-prymus{
+    left: auto !important;
+    right: 1vw !important; 
+    z-index: 1100;
+    
+}
 #skroty-nawigacji button {
     width: 50px !important;
     height: 50px;
