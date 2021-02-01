@@ -293,8 +293,16 @@ table.grpNauczUczn .bUsun, table.grpNauczUczn .bDodaj {
     background-color: #89cf1d !important;
     color: #ffffff !important;
 }
+.metro button.green6 {
+    background-color: #03d2a3 !important;
+    color: #ffffff !important;
+}
 .metro button.blue {
     background-color: #2490f0 !important;
+    color: #ffffff !important;
+}
+.metro button.blue2 {
+    background-color: #075c8d !important;
     color: #ffffff !important;
 }
 .metro button.violet {
@@ -307,6 +315,10 @@ table.grpNauczUczn .bUsun, table.grpNauczUczn .bDodaj {
 }
 .metro button.violet3 {
     background-color: #c421a3 !important;
+    color: #ffffff !important;
+}
+.metro button.violet4 {
+    background-color: #89a2e6 !important;
     color: #ffffff !important;
 }
 .metro .command-button.cobalt {
@@ -371,7 +383,7 @@ table.grpNauczUczn .bUsun, table.grpNauczUczn .bDodaj {
 }
 
 #wybor-panelu .dropdown-menu {
-	width: 250px;
+	width: 275px;
 	background-color: rgba(51, 51, 51, 0.9);
 	border: 0;
 	margin-top: 8px;

@@ -658,14 +658,22 @@ $(document).ready(function() {
 });
 
 function licznik_kasuj () {
-    licz_godz = 0;
-    licz_min = 24;
-    licz_sek = 0;
+	
+	var min = licz_min < 10 ? '0'+licz_min : licz_min;
+	var godz = licz_godz < 10 ? '0'+licz_godz : licz_godz;
+	var sek = licz_sek < 10 ? '0'+licz_sek : licz_sek;
 
+	var czasTekst = godz+":"+min+":"+sek;
+	if(czasTekst< "00:24:00"){
+		licz_godz = 0;
+		licz_min = 24;
+		licz_sek = 0;
+	}
 }
 
-licznik_kasuj();
-
+licz_godz = 0;
+licz_min = 24;
+licz_sek = 0;
 
 //Reset licznika po kliknięciu
 $(document).on('click', function(event) {
@@ -853,11 +861,27 @@ function changeLayout(){
     currentPath = currentPath[0] == '/' ? currentPath.substr(1) : currentPath;
     var paramsQuery = window.location.search;
     if(currentPath.search("prymus-")===-1){
-        //przenies do prymusa
-        window.location.href = "../prymus-"+currentPath+paramsQuery;
+		var path = "../prymus-"+currentPath+paramsQuery;
+		setDbCookieAndRedirect(path);
+
     }else{
-        //przenies do zwyklego
-        var oldLayoutPath = currentPath.replace("prymus-","");
-        window.location.href = "../"+oldLayoutPath+paramsQuery;
+		//przenies do zwyklego
+		var oldLayoutPath = currentPath.replace("prymus-","");
+		var path = "../"+oldLayoutPath+paramsQuery;
+		setDbCookieAndRedirect(path);
     }
+}
+
+function setDbCookieAndRedirect(path){
+	$.ajax({
+		url: '?dz=ajax&fn=zmiana_layout',
+		dataType: 'json',
+		type: 'get',
+		success: function(result) {
+			window.location.href = path;
+		},
+		error: function() {
+			console.log("błąd przy ustawianiu ciasteczka bazodanowego");
+		}
+	});
 }
